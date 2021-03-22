@@ -1,0 +1,16 @@
+.back-button{
+  position: absolute;
+  left: 100px;
+  top: 80px;
+  background-color: transparent;
+  border: 1px solid $dark;
+  border-radius: 99px;
+  padding: 10px 15px;
+}
+
+@media only screen and (max-width: 1366px){
+  //tablets
+  .back-button{
+    display: none;
+  }
+}

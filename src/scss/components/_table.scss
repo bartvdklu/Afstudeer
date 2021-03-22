@@ -1,0 +1,21 @@
+table, th, td {
+  font-family: $main-font;
+  font-size: 24px;
+  border: 1px solid $dark;
+  border-collapse: collapse;
+}
+
+table{
+  width: 80%;
+  margin: auto;
+}
+
+td{
+  font-weight: 300;
+  padding: 10px;
+}
+
+th{
+  font-size: bold;
+  padding: 10px;
+}
