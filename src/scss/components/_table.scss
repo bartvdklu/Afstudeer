@@ -19,3 +19,25 @@ th{
   font-size: bold;
   padding: 10px;
 }
+
+.normal{
+  width: 75%;
+  margin: 20px auto auto 0px;
+  
+  th, td {
+    font-family: $main-font;
+    font-size: 18px;
+    border: 1px solid $dark;
+    border-collapse: collapse;
+  }
+  
+  td{
+    font-weight: 300;
+    padding: 10px;
+  }
+  
+  th{
+    font-size: bold;
+    padding: 10px;
+  }
+}

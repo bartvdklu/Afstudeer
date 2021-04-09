@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Challenge| Portfolio</title>
+    <link rel="stylesheet" href="../../css/style.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="project-container">
+      <a href="../../../index.html" class="back-button">Ga terug</a>
+      <h1>Design Challenge iteraties</h1>
+      <h2>Design challenge | versie 1</h2>
+      <p>
+        Design an overview to enable potential ticket buyers for WISH Outdoor in
+        search for a new festival to see the new image of WISH Outdoor and be
+        more interested to buy tickets for the improved festival.
+      </p>
+      <h2>Design challenge | versie 2</h2>
+      <p>
+        Design a online platform where people from Brabant and hardstylers from
+        all over the Netherlands in search for a festival to go to, to see the
+        new image of WISH Outdoor and be more interested to buy tickets for the
+        improved festival.
+      </p>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $('.smooth-scroll').on('click', function (e) {
+        e.preventDefault();
+
+        var target = this.hash,
+          $target = $(target);
+
+        $('html, body')
+          .stop()
+          .animate(
+            {
+              scrollTop: $target.offset().top - 100,
+            },
+            100,
+            'linear',
+            function () {
+              // window.location.hash = target;
+            }
+          );
+      });
+    });
+  </script>
+</html>

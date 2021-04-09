@@ -30,7 +30,7 @@ var styleURL = './public/css/';
 var mapURL = './';
 
 var jsSRC = './src/js/';
-var jsFront = 'main.js';
+var jsFront = 'smoothScroll.js';
 var jsFiles = [jsFront];
 var jsURL = './public/js/';
 

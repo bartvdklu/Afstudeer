@@ -1,34 +1,42 @@
-.img-row{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  &>img{
-    height: auto;
-    max-width: 300px;
-    margin: 10px 10px 10px 0;
-  }
-  .img-wide{
-    max-width: 49%;
-    height: auto;
-  }
-  .img-extrawide{
-    max-width: 100%;
-    height: auto;
-  }
+img{
+  padding: 10px;
+  max-width: 25%;
 }
+
+// .img-row{
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+
+//   &>img{
+//     height: auto;
+//     max-width: 300px;
+//     margin: 10px 10px 10px 0;
+//   }
+//   .img-wide{
+//     max-width: 49%;
+//     height: auto;
+//   }
+//   .img-extrawide{
+//     max-width: 100%;
+//     height: auto;
+//   }
+// }
 
 @media only screen and (max-width: 600px) {
   //phones
-  .img-row{
-    &>img{
-      max-width: 100%;
-    }
-
-    .img-wide{
-      max-width: 100%;
-    }
+  img{
+    max-width: 80%;
   }
+//   .img-row{
+//     &>img{
+//       max-width: 100%;
+//     }
+
+//     .img-wide{
+//       max-width: 100%;
+//     }
+//   }
 }
 
 @media only screen and (max-width: 1366px) and (min-width: 768px) {

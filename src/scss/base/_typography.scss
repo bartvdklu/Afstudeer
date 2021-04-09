@@ -81,9 +81,16 @@ h1{
   font-size: 2vw;
 }
 
+h4, h5{
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
 h6{
   font-family: $main-font;
   font-size: 0.8vw;
+  margin-top: 30px;
+  margin-bottom: 5px;
 }
 
 a {
@@ -98,6 +105,11 @@ a {
 
 strong {
   font-weight: 500;
+}
+
+.strong {
+  font-weight: 500 !important;
+  margin-bottom: 0px !important;
 }
 
 .document-link{
