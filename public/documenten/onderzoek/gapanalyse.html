@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gap-analyse | Portfolio</title>
+    <link rel="stylesheet" href="../../css/style.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="#aanleiding" class="smooth-scroll">Aanleiding</a>
+        </li>
+        <li>
+          <a href="#uitvoering" class="smooth-scroll">Uitvoering</a>
+        </li>
+        <li>
+          <a href="#conclusie" class="smooth-scroll">Conclusie</a>
+        </li>
+        <li>
+          <a href="#reflectie" class="smooth-scroll">Reflectie</a>
+        </li>
+        <li>
+          <a href="#doc" class="smooth-scroll">Document</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="project-container">
+      <a href="../../../index.html" class="back-button">Ga terug</a>
+      <h1>GAP-analyse</h1>
+      <section id="aanleiding">
+        <h2>Aanleiding</h2>
+        <p>
+          WiSH Outdoor wil een imagoverandering doorvoeren, dit wordt op
+          verschillende manier al gedaan. Door een GAP-analyse te maken waarmee
+          de gewenste identiteit vergeleken wordt met het imago, de fysieke
+          identiteit en de werkelijke identiteit, kan ik ontdekken waar er nog
+          gaten zijn die mijn eindproduct kan opvullen. Dit is nodig om zo het
+          gat tussen de gewenste identiteit en het imago te verkleinen.
+        </p>
+      </section>
+      <section id="uitvoering">
+        <h2>Uitvoering</h2>
+        <img
+          class="full-img"
+          src="../../images/Screenshot 2021-04-30 at 13.55.36.png"
+          alt="Gap-analyse schematisch"
+        />
+        <p>
+          Alle informatie die ik nodig had om de verschillende identiteiten in
+          te vullen waren bekend via onder andere de
+          <a href="./expinterview.html" target="_blank">Expert interviews</a>
+          waarin ik met meerdere mensen heb gepraat die het festival
+          organiseren. Daarnaast heb ik ook contact gehad met verschillende
+          bezoekers van WiSH Outdoor waaruit ik het imago heb kunnen
+          vaststellen. Het imago had ik ook een deel opgesteld vanuit verhalen
+          van de experts die natuurlijk ook reacties krijgen vanuit hun eigen
+          kringen.
+        </p>
+      </section>
+      <section id="conclusie">
+        <h2>Conclusie</h2>
+        <p>
+          Veel verschillende gaten die aan het licht kwamen werden al opgelost.
+          De "Brabantse" sfeer wordt als anders aangepakt door het gebruik van
+          een andere tone-of-voice en beelden, de bekendheid van het festival
+          wordt ook al vergroot door het op social media adverteren buiten
+          Brabant.
+        </p>
+        <p>
+          Er was echter wel een GAP die niet goed opgevuld kon worden, de
+          grootsheid van WiSH Outdoor laten zien. Dit was lastig te doen via
+          beeldmateriaal omdat er van de voorgaande jaren geen goed
+          beeldmateriaal was over de grootsheid van WiSH Outdoor. Er moest ook
+          bewezen worden dat WiSH Outdoor net zo groot zou worden als dat gezegd
+          wordt.
+        </p>
+        <p>
+          Om dit te kunnen bewijzen zou mijn concept dus moeten inspelen op alle
+          veranderingen binnen het festival en dit daadwerkelijk laten zien aan
+          de bezoekers.
+        </p>
+      </section>
+      <section id="reflectie">
+        <h2>reflectie</h2>
+        <p>
+          Door het doen van de gap-analyse was het voor mij makkelijker om een
+          idee te krijgen van wat het eindproduct moest worden. Dit was fijn
+          want het gaf mij wat meer hou vast om mee door te gaan.
+        </p>
+        <p>
+          Daarnaast gaf het ook een duidelijk beeld van wat er nog moest
+          gebeuren om de imago verandering een succes te laten worden. het was
+          dus voor mij maar ook voor het bedrijf een onderzoek wat zeker als
+          nuttig wordt beschouwt.
+        </p>
+      </section>
+      <section id="doc">
+        <h2>Volledig document</h2>
+        <a
+          href="https://docs.google.com/document/d/1ROCMomhXu79Y0aOv8dVMMB_1BfOwfj-imU4949XZFIQ/edit?usp=sharing"
+          class="doc-button"
+          target="_blank"
+          >Identiteit analyse</a
+        >
+      </section>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $('.smooth-scroll').on('click', function (e) {
+        e.preventDefault();
+
+        var target = this.hash,
+          $target = $(target);
+
+        $('html, body')
+          .stop()
+          .animate(
+            {
+              scrollTop: $target.offset().top - 100,
+            },
+            100,
+            'linear',
+            function () {
+              // window.location.hash = target;
+            }
+          );
+      });
+    });
+  </script>
+</html>

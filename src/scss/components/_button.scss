@@ -11,6 +11,17 @@
   z-index: 5;
 }
 
+.doc-button{
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid $dark;
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-family: $main-font;
+  font-weight: 100;
+  z-index: 5;
+}
+
 @media only screen and (max-width: 1366px){
   //tablets
   .back-button{
