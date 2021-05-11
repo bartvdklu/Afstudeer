@@ -6,7 +6,7 @@ table, th, td {
 }
 
 table{
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 
@@ -16,7 +16,7 @@ td{
 }
 
 th{
-  font-size: bold;
+  font-weight: bold;
   padding: 10px;
 }
 
@@ -37,7 +37,7 @@ th{
   }
   
   th{
-    font-size: bold;
+    font-weight: bold;
     padding: 10px;
   }
 }
