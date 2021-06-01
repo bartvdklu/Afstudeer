@@ -11,7 +11,12 @@
     <div class="container">
       <section id="main">
         <p>
-          Hallo ik ben Bart, een student op de
+          Hallo ik ben
+          <strong
+            >Bart<img
+              id="tooltip-id"
+              src="./public/images/self_portrait_final(1)_webfriendly.jpg" /></strong
+          >, een student op de
           <strong>
             <a
               href="https://fontys.nl/"
@@ -146,7 +151,13 @@
           <h1>Implementatie fase</h1>
           <p>
             <a href="#" class="disabled" rel="noopener noreferrer"
-              >Eindproduct
+              >Focus group testing,
+            </a>
+            <a href="#" class="disabled" rel="noopener noreferrer"
+              >Eindproduct,
+            </a>
+            <a href="#" class="disabled" rel="noopener noreferrer"
+              >Adviesrapport
             </a>
           </p>
         </div>
@@ -185,4 +196,14 @@
 
     <script src="public/js/main.min.js"></script>
   </body>
+  <script>
+    var tooltipSpan = document.getElementById('tooltip-id');
+
+    window.addEventListener('mousemove', function (e) {
+      var x = e.clientX,
+        y = e.clientY;
+      tooltipSpan.style.top = y + 10 + 'px';
+      tooltipSpan.style.left = x + 10 + 'px';
+    });
+  </script>
 </html>

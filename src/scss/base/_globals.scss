@@ -20,9 +20,17 @@ audio{
   margin-bottom: 20px;
 }
 
+strong>img {
+  display: none;
+}
+strong:hover>img {
+  display:block;
+  position:absolute;
+}
+
 .project-container{
   margin: 100px auto;
-  width: 1200px;
+  width: 900px;
 
   // .project-content{
   //   width: 100%;
