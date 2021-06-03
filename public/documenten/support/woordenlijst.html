@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verklarende woordenlijst | Portfolio</title>
+    <link rel="stylesheet" href="../../css/style.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="project-container">
+      <a class="back-button" onclick="{history.back()}">Ga terug</a>
+      <h1>Verklarende woordenlijst</h1>
+      <div class="wordlist">
+        <div class="wordlist_word">
+          <h3 class="wordlist_title">AAA-festivals</h3>
+          <p class="wordlist_explination">
+            Met AAA-festival worden festivals bedoeld waarbij het
+            bezoekersaantal jaarlijks boven de 45.000 bezoekers ligt. Deze
+            festivals behoren tot de top festivals van Nederland.
+          </p>
+        </div>
+        <div class="wordlist_word">
+          <h3 class="wordlist_title">Analytics</h3>
+          <p class="wordlist_explination">
+            Analytics wordt beschreven als data verkregen door metingen. Deze
+            metingen kunnen zowel online (google analytics*) als offline
+            (turven) gedaan worden.
+          </p>
+        </div>
+        <div class="wordlist_word">
+          <h3 class="wordlist_title">API</h3>
+          <p class="wordlist_explination">
+            Een API is een stukje software dat ervoor zorgt dat systemen over
+            het web tussen elkaar kunnen communiceren.
+          </p>
+        </div>
+        <div class="wordlist_word">
+          <h3>Branding</h3>
+          <p>
+            De visuele (en niet-visuele) identiteit die het merk
+            vertegenwoordigd. Denk hierbij o.a. aan logos en marketing materiaal
+            maar ook manier van communicatie.
+          </p>
+        </div>
+        <div class="wordlist_word">
+          <h3>Frameworks</h3>
+          <p>
+            Een framework is een tool of plan wat gebruikt kan worden bij het
+            beantwoorden van een probleem. Deze tool is vaak onderzocht en wordt
+            gezien als doordacht. Door het gebruik van deze tool resulteert vaak
+            een valide oplossing voor een probleem.
+          </p>
+        </div>
+        <div class="wordlist_word">
+          <h3>Identiteit</h3>
+          <p>
+            Met identiteit wordt het beeld bedoeld dat personeel over het eigen
+            bedrijf hebben. De identiteit omvat elementen als de visie, missie,
+            kernwaarden, ambities, cultuur en de persoonlijkheid van je
+            organisatie.
+          </p>
+        </div>
+        <div class="wordlist_word">
+          <h3>Imago</h3>
+          <p>
+            Het beeld dat het algemene publiek over WiSH Outdoor heeft. Dit is
+            het tegenovergestelde van de identiteit.
+          </p>
+        </div>
+        <div class="wordlist_word">
+          <h3>Itereren</h3>
+          <p>
+            Het herhaaldelijk verbeteren van een product aan de hand van nieuwe
+            testresultaten of onderzoek.
+          </p>
+        </div>
+        <div class="wordlist_word">
+          <h3>Javascript</h3>
+          <p>
+            Javascript is een programmeer taal waarmee je onder andere complexe
+            taken en animaties kan toevoegen aan je website.
+          </p>
+        </div>
+        <div class="wordlist_word">
+          <h3>Stage design</h3>
+          <p>
+            Stage design is het creëren van een podium aan de hand van o.a.
+            licht, geluid en aankleding. Deze podia worden vaak eerst digitaal
+            uitgewerkt voordat het podium daadwerkelijk gebouwd wordt.
+          </p>
+        </div>
+        <div class="wordlist_word">
+          <h3>Stages</h3>
+          <p>
+            De podiums waar artiesten op optreden.
+          </p>
+        </div>
+        <div class="wordlist_word">
+          <h3>Three.js</h3>
+          <p>
+            Three.js is een Javascript 3D library waarmee het makkelijker wordt
+            gemaakt om 3D content op een webpagina te krijgen.
+          </p>
+        </div>
+        <div class="wordlist_word">
+          <h3>WebGL</h3>
+          <p>
+            WebGL is een Javascript API voor het laten zien van 2D en 3D
+            elementen op een webpagina.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $('.smooth-scroll').on('click', function (e) {
+        e.preventDefault();
+
+        var target = this.hash,
+          $target = $(target);
+
+        $('html, body')
+          .stop()
+          .animate(
+            {
+              scrollTop: $target.offset().top - 100,
+            },
+            100,
+            'linear',
+            function () {
+              // window.location.hash = target;
+            }
+          );
+      });
+    });
+  </script>
+</html>

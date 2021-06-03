@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three.js cursus | Portfolio</title>
+    <link rel="stylesheet" href="../../css/style.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="#aanleiding" class="smooth-scroll">Aanleiding</a>
+        </li>
+        <li>
+          <a href="#uitvoering" class="smooth-scroll">Uitvoering</a>
+        </li>
+        <li>
+          <a href="#resultaat" class="smooth-scroll">Resultaten</a>
+        </li>
+        <li>
+          <a href="#conclusie" class="smooth-scroll">Conclusie</a>
+        </li>
+        <li>
+          <a href="#reflectie" class="smooth-scroll">Reflectie</a>
+        </li>
+        <li>
+          <a href="#doc" class="smooth-scroll">Document</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="project-container">
+      <a class="back-button" onclick="{history.back()}">Ga terug</a>
+      <h1>Three.js cursus</h1>
+      <section id="aanleiding">
+        <h2>Aanleiding</h2>
+      </section>
+      <section id="uitvoering">
+        <h2>Uitvoering</h2>
+      </section>
+      <section id="resultaat">
+        <h2>Resultaten</h2>
+      </section>
+      <section id="conclusie">
+        <h2>Conclusie</h2>
+      </section>
+      <section id="reflectie">
+        <h2>reflectie</h2>
+      </section>
+      <section id="doc">
+        <h2>Volledig document</h2>
+        <a href="#" class="doc-button" target="_blank">Button</a>
+      </section>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $('.smooth-scroll').on('click', function (e) {
+        e.preventDefault();
+
+        var target = this.hash,
+          $target = $(target);
+
+        $('html, body')
+          .stop()
+          .animate(
+            {
+              scrollTop: $target.offset().top - 100,
+            },
+            100,
+            'linear',
+            function () {
+              // window.location.hash = target;
+            }
+          );
+      });
+    });
+  </script>
+</html>

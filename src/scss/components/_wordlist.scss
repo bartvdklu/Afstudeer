@@ -1,0 +1,11 @@
+.wordlist{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  .wordlist_word{
+    display: flex;
+    flex-direction: column;
+    width: calc(25% - 20px);
+    padding: 10px;
+  }
+}
